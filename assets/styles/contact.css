@@ -1,0 +1,83 @@
+/* Paramètres généraux */
+@font-face {
+    font-family: "font-reg";
+    src: url(../fonts/PlayfairDisplay-Regular.ttf);
+  }
+  @font-face {
+    font-family: "font-bold";
+    src: url(../fonts/PlayfairDisplay-ExtraBold.ttf);
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  *::selection {
+    background: #000101;
+    color: #fefeff;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: "font-reg", serif;
+    background: #000101;
+    color: #fefeff;
+    transition: 0.7s ease-in-out;
+  }
+
+  .menu{
+    display: flex;
+    /* justify-content: center; */
+    text-decoration: none;
+    font-size: 30px;
+    color: #fefeff;
+    
+  }
+  .menu:hover{
+    text-decoration: none;
+    color: #fefeff;
+    font-size: 32px;
+    text-decoration: underline;
+    box-shadow: 1px ;
+
+  }
+  
+  .container {
+  background-color: #fefeff42;
+  padding: 20px;
+  margin: 5% 25% 0 25%; 
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 8px white;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.container label,
+.container input,
+.container textarea,
+.container button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: none;
+    background-color: rgba(36, 33, 33, 0.349); /* Fond semi-transparent */
+    color: white;
+    border-radius: 5px;
+}
+
+.container button {
+    background-color: #a0a3a7; /* Bouton bleu */
+    cursor: pointer;
+}
+
+.container button:hover {
+    background-color: #2b2f3391; /* Légère variation de couleur au survol */
+}
